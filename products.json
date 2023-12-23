@@ -1,0 +1,49 @@
+[
+    {
+        "id": 1,
+        "name":" CCTVs",
+        "image": "images/cctv.jpg"
+    },
+    {
+        "id": 2,
+        "name":" WALL BRACKETS",
+        "image": "images/brackets.jpeg"
+    },
+    {
+        "id": 3,
+        "name":" KITCHEN APPLIANCES",
+        
+        "image": "images/kitchen.jpg"
+    },
+    {
+        "id": 4,
+        "name":" SOLAR FLOOD LIGHTS",
+        
+        "image": "images/solarflood.jpg"
+    },
+    {
+        "id": 5,
+        "name":" CLAY CANDLE POTS",
+        
+        "image": "images/clay.jpeg"
+    },
+    {
+        "id": 6,
+        "name":" CLOCK HD CAMERA",
+        
+        "image": "images/spyclock.webp"
+    },
+    {
+        "id": 7,
+        "name":" ELECTRIC PUMP",
+       
+        "image": "images/electric pump.jpeg"
+    },
+    {
+        "id": 8,
+        "name":" DSTV's",
+       
+        "image": "images/dstv.jpeg"
+    }
+
+]
