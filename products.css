@@ -1,7 +1,62 @@
 body{
     margin: 0;
     font-family: Poppins;
+    background-color: #E8BC0E;
 }
+
+/* ------------------nav------------- */
+nav{
+    /* background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(GuraPhotos/river-11.jpg); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 90px;
+    width: 100%;
+  }
+  label.logo{
+    color: #fff;
+    font-size: 20px;
+    line-height: 80px;
+    padding: 0 30px;
+  }
+  nav ul{
+    float: right;
+    margin-right: 20px;
+  }
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 7px 13px;
+    text-transform: uppercase;
+  }
+  nav ul li a:hover{
+    text-decoration: underline;
+    color: #fff;
+  }
+  .fa-bars{
+    font-size: 30px;
+    color: #fff;
+  }
+  .checkbtn{
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+  img{
+    object-fit: cover;
+  }
+  
+/* -------------------end nav------------- */
 .container{
     width: 900px;
     margin: auto;
@@ -174,3 +229,124 @@ body.showCart .container{
   .event{
     background-color: #9bf111;
   }
+
+  @media (max-width: 480px){
+    html, body{
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow-x: hidden;
+    }
+  
+    .logo{
+      font-size: 8px;
+      /* color: blueviolet; */
+    }
+    .logo img{
+      width: 110px;
+      height: 80px;
+      padding: 1.5rem 0 0 2rem;
+      margin-top: -0.5rem;
+      margin-left: -1rem;
+      object-fit: contain;
+    }
+    nav ul li a{
+      font-size: 14px;
+    }
+    .checkbtn{
+      display: block;
+    }
+    .close{
+      display: block;
+      margin-left: 8rem;
+      margin-bottom: -2.5rem;
+      padding-top: 1rem;
+      cursor: pointer;
+    }
+    .fa-bars{
+      font-size: 20px;
+    }
+    ul{
+      position: fixed;
+      width: 70%;
+      height: 100vh;
+      background: #fff;
+      top: 0px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+    }
+    nav ul li{
+      display: block;
+      margin: 50px;
+      margin-left: -0.3rem;
+      line-height: 30px;
+    }
+    nav ul li a{
+      font-size: 15px;
+      color: #000;
+    }
+    nav ul li a:hover{
+      text-decoration: underline;
+      color: #000;
+    }
+    #check:checked ~ ul{
+      left: 0;
+      z-index: 2;
+    }
+    .row{
+      margin-left: 0rem;
+    }
+    img{
+      margin-left: 0rem;
+      object-fit: cover;
+      height: 55vh;
+  
+    }
+    .prev, .next{
+      padding: 12px;
+    }
+    .prev{
+      left: 7%; 
+      padding: 0.5rem;
+      
+    }
+    .next{
+      left: 85%;
+      padding: 0.5rem;
+    }
+    .numbertext{
+      top: -1%;
+      left: 2%;
+      color: #f2f2f2;
+      font-size: 12px;
+      font-size: 400;
+    }
+    .contact i{
+      color: #eef5fc;
+      text-align: center;
+      padding-bottom: 2rem;
+      padding: 0.5rem;
+      border: 1px solid #eef5fc;
+      border-radius: 50%;
+      margin-right: 2rem;
+    }
+    .social{
+      margin-left: 7.5rem;
+      margin-bottom: 2rem;
+    }
+    p{
+      width: 95%;
+      margin-left: 1rem;
+    }
+    video{
+      width: 40vh;
+      height: 50vh;
+      margin-left: 1rem;
+      background-color: #22223b;
+    }
+    
+  
+  }
+ 
