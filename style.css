@@ -68,6 +68,8 @@ nav{
   background: transparent;
   height: 90px;
   width: 100%;
+  /* background-color: #11af11; */
+  
 }
 .logo p{
   color: #fff;
@@ -205,7 +207,8 @@ nav ul li a:hover{
   border-radius: 50px;
 }
 .event{
-  background-color: #22223b;
+  background-color: #11af11;
+
 }
 
 
