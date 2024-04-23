@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wallpapers</title>
+    <style>
+        /* Designing all grid */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            background-color: white;
+           
+            grid-column-gap: 50px;
+            grid-row-gap: 50px;
+            padding: 5px;
+        }
+
+        /* Designing all grid-items */
+        .grid-item {
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid black;
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        /* Making images responsive */
+        
+        .grid-item img {
+            max-width: 100%;
+            height: auto; /* Adjust this if you want a fixed height */
+            object-fit: cover; /* This will ensure the image covers the area without stretching */
+        }
+        
+
+        /* Designing h1 element */
+        h1 {
+            color: green;
+            text-align: center;
+        }
+
+        /* Adjusting grid layout for different screen sizes */
+        @media (max-width: 600px) {
+            .grid-container {
+                grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Modern wallpapers</h1>
+
+    <!-- Creating grids -->
+    <div class="grid-container">
+        <div class="grid-item"><img src="faraday/arizona.jpg" alt=""></div>
+        <div class="grid-item"><img src="faraday/bannerfix.jpg" alt=""></div>
+        <div class="grid-item"><img src="faraday/billboard.jpg" alt=""></div>
+        <div class="grid-item"><img src="faraday/lightbox.jpg" alt=""></div>
+        <div class="grid-item"><img src="faraday/lightboxb.jpg" alt=""></div>
+        <div class="grid-item"><img src="faraday/lightboxc.jpg" alt=""></div>
+        <div class="grid-item"><img src="faraday/liquor signs.jpg" alt=""></div>
+        <div class="grid-item"><img src="faraday/neki.jpg" alt=""></div>
+        <div class="grid-item"><img src="faraday/signsb.jpg" alt=""></div>
+        <div class="grid-item"><img src="faraday/mkopa.jpg" alt=""></div>
+        <div class="grid-item"><img src="faraday/loaded hms.jpg" alt=""></div>
+        <div class="grid-item"><img src="faraday/sign10.jpg" alt=""></div>
+    </div>
+</body>
+</html>
