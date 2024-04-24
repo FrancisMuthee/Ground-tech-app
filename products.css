@@ -29,6 +29,7 @@ nav{
     display: inline-block;
     line-height: 80px;
     margin: 0 5px;
+    font-weight: 700;
   }
   nav ul li a{
     color: #fff;

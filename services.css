@@ -56,7 +56,24 @@ nav{
   opacity: 1;
 }
 
-
+.custom-button{
+  background-color: cyan;
+}
+.custom-button5{
+  background-color: cyan;
+}
+.custom-button4{
+  background-color: cyan;
+}
+.custom-button3{
+  background-color: cyan;
+}
+.custom-button2{
+  background-color: cyan;
+}
+.custom-button6{
+  background-color: red;
+}
 .res{
   margin-left: 12rem;
 }
@@ -90,6 +107,7 @@ nav ul li{
   display: inline-block;
   line-height: 80px;
   margin: 0 5px;
+  font-weight: 700;
 }
 nav ul li a{
   color: #fff;
