@@ -1,0 +1,616 @@
+body{
+    margin: 0;
+    font-family: Poppins;
+    background-color: yellow;
+}
+
+/* ------------------nav------------- */
+nav{
+    /* background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(GuraPhotos/river-11.jpg); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: black;
+    height: 90px;
+    width: 100%;
+  }
+  label.logo{
+    color: #fff;
+    font-size: 20px;
+    line-height: 80px;
+    padding: 0 30px;
+
+  }
+  nav ul{
+    float: right;
+    margin-right: 20px;
+  }
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+    font-weight: 700;
+  }
+  nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 7px 13px;
+    text-transform: uppercase;
+  }
+  nav ul li a:hover{
+    text-decoration: underline;
+    color: #fff;
+  }
+  .fa-bars{
+    font-size: 30px;
+    color: #fff;
+  }
+  .checkbtn{
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+  img{
+    object-fit: cover;
+  }
+  
+/* -------------------end nav------------- */
+.container{
+    width: 900px;
+    margin: auto;
+    max-width: 90vw;
+    text-align: center;
+    padding-top: 10px;
+    transition: transform .5s;
+}
+svg{
+    width: 30px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+.icon-cart{
+    position: relative;
+}
+.icon-cart span{
+    position: absolute;
+    background-color: red;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #fff;
+    top: 50%;
+    right: -20px;
+}
+.title{
+    font-size: xx-large;
+}
+.listProduct .item img{
+    height: 55%;
+    width: 90%;
+    filter: drop-shadow(0 50px 20px #0009);
+}
+.listProduct{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.listProduct .item{
+    background-color: #EEEEE6;
+    padding: 20px;
+    border-radius: 20px;
+}
+.listProduct .item h2{
+    font-weight: 500;
+    font-size: large;
+}
+.listProduct .item .price{
+    letter-spacing: 7px;
+    font-size: small;
+}
+.listProduct .item button{
+    background-color: #353432;
+    color: #eee;
+    border: none;
+    padding: 5px 10px;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+
+/* cart */
+.cartTab{
+    width: 400px;
+    background-color: #353432;
+    color: #eee;
+    position: fixed;
+    top: 0;
+    right: -400px;
+    bottom: 0;
+    display: grid;
+    grid-template-rows: 70px 1fr 70px;
+    transition: .5s;
+}
+body.showCart .cartTab{
+    right: 0;
+}
+body.showCart .container{
+    transform: translateX(-250px);
+}
+.cartTab h1{
+    padding: 20px;
+    margin: 0;
+    font-weight: 300;
+}
+.cartTab .btn{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.cartTab button{
+    background-color: #E8BC0E;
+    border: none;
+    font-family: Poppins;
+    font-weight: 500;
+    cursor: pointer;
+}
+.cartTab .close{
+    background-color: #eee;
+}
+.listCart .item img{
+    /* height: 55%; */
+    width: 100%;
+}
+.listCart .item{
+    display: grid;
+    grid-template-columns: 70px 150px 50px 1fr;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+}
+.listCart .quantity span{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+    color: #555;
+    cursor: pointer;
+}
+.listCart .quantity span:nth-child(2){
+    background-color: transparent;
+    color: #eee;
+    cursor: auto;
+}
+.listCart .item:nth-child(even){
+    background-color: #eee1;
+}
+.listCart{
+    overflow: auto;
+}
+.listCart::-webkit-scrollbar{
+    width: 0;
+}
+@media only screen and (max-width: 992px) {
+    .listProduct{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+/* mobile */
+@media only screen and (max-width: 768px) {
+    .listProduct{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.buttons{
+    text-align: center;
+    margin-top: 6rem;
+    margin-bottom: 1rem;
+    
+  }
+.buttons a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 18px;
+    border: 1px solid;
+    padding: 0.4rem;
+    border-radius: 50px;
+  }
+  .event{
+    background-color: #9bf111;
+  }
+
+
+  nav{
+    background: transparent;
+    height: 90px;
+    width: 100%;
+  }
+  .logo p{
+    color: #fff;
+    margin-left: 2rem;
+    margin-top: 2.5rem;
+  }
+  .logo img{
+    width: 150px;
+    height: 130px;
+    padding: 1.5rem 0 0 2rem;
+    margin-top: -5rem;
+    margin-left: 27rem;
+    object-fit: cover;
+  }
+  nav ul{
+    float: right;
+    margin-right: 20px;
+  }
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 7px 13px;
+    text-transform: uppercase;
+  }
+  nav ul li a:hover{
+    text-decoration: underline;
+    color: #fff;
+  }
+  
+  .fa-bars{
+    font-size: 30px;
+    color: #fff;
+  }
+  .checkbtn{
+    float: right;
+    margin-top: 2.5rem;
+    margin-right: 40px;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+  
+  /* menu */
+  
+  nav ul li a{
+    font-size: 18px;
+  }
+  .checkbtn{
+    display: block;
+    margin-right: 12rem;
+    cursor: pointer;
+  }
+  .close{
+    display: block;
+    margin-left: 14rem;
+    margin-bottom: -2.5rem;
+    padding-top: 1rem;
+    cursor: pointer;
+  }
+  .fa-bars{
+    font-size: 25px;
+  }
+  .fa-x{
+    font-size: 25px;
+  }
+  ul{
+    position: fixed;
+    width: 30%;
+    height: 110vh;
+    background: #fff;
+    top: -1px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px;
+    margin-left: -0.3rem;
+    line-height: 24px;
+  }
+  nav ul li a{
+    font-size: 15px;
+    color: #000;
+  }
+  nav ul li a:hover{
+    text-decoration: underline;
+    color: #000;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+
+@media (min-width: 992px) and (max-width: 1199px){
+nav ul li a{
+font-size: 14px;
+}
+.checkbtn{
+display: block;
+margin-right: 5rem;
+cursor: pointer;
+}
+.close{
+display: block;
+margin-left: 16rem;
+margin-bottom: -2.5rem;
+padding-top: 1rem;
+cursor: pointer;
+}
+.fa-bars{
+font-size: 20px;
+}
+ul{
+position: fixed;
+width: 40%;
+height: 100vh;
+background: #fff;
+top: -1px;
+left: -100%;
+text-align: center;
+transition: all .5s;
+}
+nav ul li{
+display: block;
+margin: 50px;
+margin-left: -0.3rem;
+line-height: 24px;
+}
+nav ul li a{
+font-size: 15px;
+color: #000;
+}
+nav ul li a:hover{
+text-decoration: underline;
+color: #000;
+}
+#check:checked ~ ul{
+left: 0;
+}
+.heading-1 h1{
+font-size: 50px;
+}
+.heading-1 h5{
+font-size: 15px;
+margin-left: 13rem;
+width: 50%;
+}
+.buttons{
+margin-top: 7rem;
+}
+.buttons a{
+padding: 0.3rem;
+font-size: 16px;
+}
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+nav ul li a{
+font-size: 14px;
+}
+.checkbtn{
+display: block;
+margin-right: 1rem;
+cursor: pointer;
+}
+.close{
+display: block;
+margin-left: 13rem;
+margin-bottom: -2.5rem;
+padding-top: 1rem;
+cursor: pointer;
+}
+.fa-bars{
+font-size: 20px;
+}
+ul{
+position: fixed;
+width: 50%;
+height: 100vh;
+background: #fff;
+top: 0px;
+left: -100%;
+text-align: center;
+transition: all .5s;
+}
+nav ul li{
+display: block;
+margin: 50px;
+margin-left: -0.3rem;
+line-height: 24px;
+}
+nav ul li a{
+font-size: 15px;
+color: #000;
+}
+nav ul li a:hover{
+text-decoration: underline;
+color: #000;
+}
+#check:checked ~ ul{
+left: 0;
+}
+.heading-1 h1{
+font-size: 50px;
+}
+.heading-1 h5{
+font-size: 15px;
+margin-left: 6rem;
+width: 70%;
+}
+.buttons{
+margin-top: 7rem;
+}
+.buttons a{
+padding: 0.3rem;
+font-size: 16px;
+}
+}
+
+
+@media (min-width: 481px) and (max-width: 767px){
+    nav ul li a{
+        font-size: 14px;
+      }
+      .checkbtn{
+        display: block;
+        margin-right: 1rem;
+        cursor: pointer;
+      }
+      .close{
+        display: block;
+        margin-left: 16rem;
+        margin-bottom: -2.5rem;
+        padding-top: 1rem;
+        cursor: pointer;
+      }
+      .fa-bars{
+        font-size: 20px;
+      }
+      ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #fff;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+      }
+      nav ul li{
+        display: block;
+        margin: 50px;
+        margin-left: -0.3rem;
+        line-height: 24px;
+      }
+      nav ul li a{
+        font-size: 15px;
+        color: #000;
+      }
+      nav ul li a:hover{
+        text-decoration: underline;
+        color: #000;
+      }
+      #check:checked ~ ul{
+        left: 0;
+      }
+      .heading-1 h1{
+        font-size: 50px;
+      }
+      .heading-1 h5{
+        font-size: 15px;
+        margin-left: 0.1rem;
+        width: 100%;
+      }
+      .buttons{
+        margin-top: 7rem;
+      }
+      .buttons a{
+        padding: 0.3rem;
+        font-size: 16px;
+      }
+    }
+    
+    @media (max-width: 480px){
+      html, body{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+      }
+    
+      .logo p{
+        font-size: 20px;
+        margin-top: 2.5rem;
+        margin-left: 0.5rem;
+      }
+      .logo img{
+        width: 100px;
+        height: 80px;
+        padding: 1.5rem 0 0 2rem;
+        margin-top: -7rem;
+        margin-left: 7rem;
+        object-fit: cover;
+      }
+      nav ul li a{
+        font-size: 14px;
+      }
+      .checkbtn{
+        display: block;
+        margin-right: 1rem;
+        cursor: pointer;
+      }
+      .close{
+        display: block;
+        margin-left: 8rem;
+        margin-bottom: -2.5rem;
+        padding-top: 1rem;
+        cursor: pointer;
+      }
+      .fa-bars{
+        font-size: 20px;
+      }
+      ul{
+        position: fixed;
+        width: 70%;
+        height: 100vh;
+        background: #fff;
+        top: 0px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+      }
+      nav ul li{
+        display: block;
+        margin: 50px;
+        margin-left: -0.3rem;
+        line-height: 24px;
+      }
+      nav ul li a{
+        font-size: 15px;
+        color: #000;
+      }
+      nav ul li a:hover{
+        text-decoration: underline;
+        color: #000;
+      }
+      #check:checked ~ ul{
+        left: 0;
+      }
+      .heading-1 h1{
+        font-size: 50px;
+      }
+      .heading-1 h5{
+        font-size: 15px;
+        margin-left: 0.1rem;
+        width: 100%;
+      }
+      .buttons{
+        margin-top: 7rem;
+      }
+      .buttons a{
+        padding: 0.3rem;
+        font-size: 16px;
+      }
+    }
+
+
+  
